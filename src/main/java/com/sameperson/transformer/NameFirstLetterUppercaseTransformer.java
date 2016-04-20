@@ -12,7 +12,7 @@ public class NameFirstLetterUppercaseTransformer implements Transformer {
     @Autowired
     private NameGenerator nameGenerator;
 
-        public String transform() {
+    public String transform() {
         String name = nameGenerator.generateName();
         return name.substring(0, 1).toUpperCase() + name.substring(1);
     }
