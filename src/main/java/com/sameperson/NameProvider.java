@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
 public class NameProvider {
 
     @Autowired
-    @Qualifier("first-letter")
+    @Qualifier("first-letter-uppercase")
     private Transformer transformerFirstLetterUppercase;
     @Autowired
-    @Qualifier("all-letters")
+    @Qualifier("all-letters-uppercase")
     private Transformer transformerAllUppercase;
 
     public String getFirstLetterUppercase() {

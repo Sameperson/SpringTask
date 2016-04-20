@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("first-letter")
+@Qualifier("first-letter-uppercase")
 public class NameFirstLetterUppercaseTransformer implements Transformer {
 
     @Autowired
