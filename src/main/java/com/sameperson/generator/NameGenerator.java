@@ -7,10 +7,14 @@ import java.util.Random;
 @Component
 public class NameGenerator {
 
-    public NameGenerator() {}
+    private Random random;
+
+    public NameGenerator() {
+        random = new Random();
+    }
 
     public String generateName() {
-        Random random = new Random();
+
         String letters = "abcdefghijklmnopqrstuvwxyz";
         StringBuilder sb = new StringBuilder("");
         for(int i = 0; i < 3; i++) {
